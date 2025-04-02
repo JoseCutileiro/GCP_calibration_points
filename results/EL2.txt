@@ -1,0 +1,17 @@
+Usando 20 pontos de configuração: erro médio = 106.97 cm
+Usando 19 pontos de configuração: erro médio = 109.11 cm
+Usando 18 pontos de configuração: erro médio = 108.43 cm
+Usando 17 pontos de configuração: erro médio = 110.36 cm
+Usando 16 pontos de configuração: erro médio = 124.75 cm
+Usando 15 pontos de configuração: erro médio = 103.93 cm
+Usando 14 pontos de configuração: erro médio = 109.53 cm
+Usando 13 pontos de configuração: erro médio = 100.87 cm
+Usando 12 pontos de configuração: erro médio = 88.71 cm
+Usando 11 pontos de configuração: erro médio = 89.73 cm
+Usando 10 pontos de configuração: erro médio = 89.73 cm
+Usando 9 pontos de configuração: erro médio = 83.84 cm
+Usando 8 pontos de configuração: erro médio = 80.38 cm
+Usando 7 pontos de configuração: erro médio = 79.80 cm
+Usando 6 pontos de configuração: erro médio = 160.90 cm
+Usando 5 pontos de configuração: erro médio = 152.08 cm
+Usando 4 pontos de configuração: erro médio = 8343.52 cm

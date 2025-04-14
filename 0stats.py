@@ -6,7 +6,7 @@ from statistics import mean
 def main():
     folder = "results"  # Pasta onde estão os ficheiros
     # Dicionário para armazenar os erros normalizados de cada configuração, agregados de todos os ficheiros
-    aggregated_data = {i: [] for i in range(5, 21)}
+    aggregated_data = {i: [] for i in range(7, 21)}
     
     # Expressão regular para extrair os valores dos ficheiros
     pattern = re.compile(r"Usando (\d+) pontos de configuração: erro médio = ([\d\.]+) cm")
@@ -23,7 +23,7 @@ def main():
                     if match:
                         config_points = int(match.group(1))
                         error_value = float(match.group(2))
-                        if 5 <= config_points <= 20:
+                        if 7 <= config_points <= 20:
                             file_data[config_points] = error_value
             # Se houver dados no ficheiro, normaliza-os usando min-max
             if file_data:
@@ -32,7 +32,7 @@ def main():
                 file_max = max(valores)
                 # Evita divisão por zero se todos os valores forem iguais
                 if file_max == file_min:
-                    normalized_file = {k: 0.5 for k in file_data.keys()}
+                    normalized_file = {k: 0.7 for k in file_data.keys()}
                 else:
                     normalized_file = {k: (v - file_min) / (file_max - file_min) for k, v in file_data.items()}
                 # Agrega os valores normalizados no dicionário geral
@@ -46,9 +46,9 @@ def main():
     # Cria o gráfico de barras com os valores normalizados médios
     plt.figure(figsize=(10, 6))
     plt.bar(x_values, mean_normalized)
-    plt.xlabel("Número de pontos de configuração")
-    plt.ylabel("Erro normalizado")
-    plt.title("Erro normalizado vs Número de pontos de configuração")
+    plt.xlabel("Number of GCPs")
+    plt.ylabel("Normalized Error")
+    plt.title("Normalized Error vs Number of GCPs")
     plt.xticks(x_values)
     
     # Salva o gráfico como PNG

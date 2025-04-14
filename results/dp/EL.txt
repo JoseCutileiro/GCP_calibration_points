@@ -1,0 +1,18 @@
+Avaliação da homografia:
+Usando 20 pontos de configuração: erro médio = 60.57 cm | desvio padrão = 32.85 cm
+Usando 19 pontos de configuração: erro médio = 59.55 cm | desvio padrão = 31.89 cm
+Usando 18 pontos de configuração: erro médio = 59.59 cm | desvio padrão = 32.23 cm
+Usando 17 pontos de configuração: erro médio = 60.94 cm | desvio padrão = 34.05 cm
+Usando 16 pontos de configuração: erro médio = 68.19 cm | desvio padrão = 35.79 cm
+Usando 15 pontos de configuração: erro médio = 63.72 cm | desvio padrão = 33.35 cm
+Usando 14 pontos de configuração: erro médio = 62.72 cm | desvio padrão = 35.80 cm
+Usando 13 pontos de configuração: erro médio = 59.14 cm | desvio padrão = 36.99 cm
+Usando 12 pontos de configuração: erro médio = 59.34 cm | desvio padrão = 37.01 cm
+Usando 11 pontos de configuração: erro médio = 61.24 cm | desvio padrão = 36.92 cm
+Usando 10 pontos de configuração: erro médio = 62.87 cm | desvio padrão = 38.80 cm
+Usando  9 pontos de configuração: erro médio = 53.88 cm | desvio padrão = 33.79 cm
+Usando  8 pontos de configuração: erro médio = 53.99 cm | desvio padrão = 34.84 cm
+Usando  7 pontos de configuração: erro médio = 62.00 cm | desvio padrão = 28.38 cm
+Usando  6 pontos de configuração: erro médio = 83.00 cm | desvio padrão = 37.20 cm
+Usando  5 pontos de configuração: erro médio = 68.00 cm | desvio padrão = 29.40 cm
+Usando  4 pontos de configuração: erro médio = 222.88 cm | desvio padrão = 157.40 cm

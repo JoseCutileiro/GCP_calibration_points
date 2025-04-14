@@ -1,4 +1,4 @@
-# TESTE ELVAS
+# TESTE MICHIGAN 
 import cv2
 import numpy as np
 import math
@@ -58,43 +58,43 @@ def latlon_to_xy(lat_deg, lon_deg, lat0_deg, lon0_deg):
 def main():
     # 1. Definir as coordenadas de Configuração e Teste (strings)
     config_coords_str = [
-        "38.875340°N 7.164515°W",
-        "38.875394°N 7.164664°W",
-        "38.875270°N 7.164353°W",
-        "38.875199°N 7.164562°W",
-        "38.875531°N 7.164456°W",
-        "38.875565°N 7.164642°W",
-        "38.875216°N 7.164752°W",
-        "38.875139°N 7.164428°W",
-        "38.875468°N 7.164205°W",
-        "38.875589°N 7.164317°W",
-        "38.875668°N 7.164758°W",
-        "38.875516°N 7.164837°W",
-        "38.875111°N 7.164654°W",
-        "38.875060°N 7.164320°W",
-        "38.875186°N 7.164166°W",
-        "38.875011°N 7.164581°W",
-        "38.875315°N 7.164904°W",
-        "38.875465°N 7.164362°W",
-        "38.875389°N 7.164752°W",
-        "38.875260°N 7.164445°W"
+        "30.565206°N 104.083595°E",
+        "30.565403°N 104.083449°E",
+        "30.565391°N 104.083626°E",
+        "30.565243°N 104.083402°E",
+        "30.565005°N 104.083492°E",
+        "30.565513°N 104.083556°E",
+        "30.565294°N 104.083816°E",
+        "30.565324°N 104.083251°E",
+        "30.565461°N 104.083402°E",
+        "30.565069°N 104.083711°E",
+        "30.565458°N 104.083763°E",
+        "30.565160°N 104.083304°E",
+        "30.565495°N 104.083471°E",
+        "30.565018°N 104.083625°E",
+        "30.565415°N 104.083346°E",
+        "30.565126°N 104.083803°E",
+        "30.565492°N 104.083695°E",
+        "30.565086°N 104.083354°E",
+        "30.565392°N 104.083834°E",
+        "30.565212°N 104.083272°E"
     ]
     test_coords_str = [
-        "38.875338°N 7.164687°W",
-        "38.875199°N 7.164639°W",
-        "38.875157°N 7.164494°W",
-        "38.875209°N 7.164368°W",
-        "38.875313°N 7.164284°W",
-        "38.875425°N 7.164303°W",
-        "38.875487°N 7.164426°W",
-        "38.875508°N 7.164530°W",
-        "38.875479°N 7.164637°W",
-        "38.875429°N 7.164702°W",
-        "38.875287°N 7.164766°W",
-        "38.875201°N 7.164812°W",
-        "38.875148°N 7.164851°W",
-        "38.875076°N 7.164814°W",
-        "38.875117°N 7.164744°W"
+        "30.565212°N 104.083272°E",
+        "30.565283°N 104.083692°E",
+        "30.565282°N 104.083658°E",
+        "30.565283°N 104.083629°E",
+        "30.565289°N 104.083586°E",
+        "30.565301°N 104.083547°E",
+        "30.565305°N 104.083518°E",
+        "30.565308°N 104.083492°E",
+        "30.565305°N 104.083467°E",
+        "30.565304°N 104.083445°E",
+        "30.565312°N 104.083421°E",
+        "30.565314°N 104.083402°E",
+        "30.565309°N 104.083380°E",
+        "30.565308°N 104.083368°E",
+        "30.565318°N 104.083346°E"
     ]
     
     # 2. Converter as strings para (lat, lon)
@@ -109,7 +109,7 @@ def main():
     test_world   = np.array([latlon_to_xy(lat, lon, lat0, lon0) for (lat, lon) in test_latlon], dtype=np.float32)
 
     # 5. Carregar a imagem (substitua "tes.png" pelo caminho da sua imagem)
-    image_path = "imgs/EL2.png"
+    image_path = "imgs/CHENGDU.png"
     img = cv2.imread(image_path)
     if img is None:
         print("Erro ao carregar a imagem.")
@@ -173,7 +173,8 @@ def main():
         mean_error = np.mean(errors)
         mean_error_cm = mean_error * 100.0
         print(f"Usando {n} pontos de configuração: erro médio = {mean_error_cm:.2f} cm")
-
+        
+        
     # 9. Avaliar a homografia usando diferentes números de pontos de configuração (de 20 até 4)
     print("\nAvaliação da homografia:")
     for n in range(20, 3, -1):
@@ -198,6 +199,7 @@ def main():
         std_error_cm = std_error * 100.0
 
         print(f"Usando {n:2d} pontos de configuração: erro médio = {mean_error_cm:.2f} cm | desvio padrão = {std_error_cm:.2f} cm")
+        
 
 if __name__ == "__main__":
     main()

@@ -174,5 +174,32 @@ def main():
         mean_error_cm = mean_error * 100.0
         print(f"Usando {n} pontos de configuração: erro médio = {mean_error_cm:.2f} cm")
 
+    # 9. Avaliar a homografia usando diferentes números de pontos de configuração (de 20 até 4)
+    print("\nAvaliação da homografia:")
+    for n in range(20, 3, -1):
+        subset_pixels = config_pixels[:n]
+        subset_world  = config_world[:n]
+        H, status = cv2.findHomography(subset_pixels, subset_world, cv2.RANSAC, 5.0)
+        if H is None:
+            print(f"Falha ao calcular homografia com {n} pontos.")
+            continue
+
+        # Aplicar a homografia aos pontos de teste
+        test_pixels_reshaped = test_pixels.reshape(-1, 1, 2)
+        test_pred = cv2.perspectiveTransform(test_pixels_reshaped, H)
+        test_pred = test_pred.reshape(-1, 2)
+
+        # Calcular o erro (distância Euclidiana) entre os pontos previstos e os pontos de teste (em metros)
+        errors = np.linalg.norm(test_pred - test_world, axis=1)
+        mean_error = np.mean(errors)
+        std_error = np.std(errors)
+        
+        mean_error_cm = mean_error * 100.0
+        std_error_cm = std_error * 100.0
+
+        print(f"Usando {n:2d} pontos de configuração: erro médio = {mean_error_cm:.2f} cm | desvio padrão = {std_error_cm:.2f} cm")
+
+
+
 if __name__ == "__main__":
     main()

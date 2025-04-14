@@ -1,0 +1,17 @@
+Usando 20 pontos de configuração: erro médio = 104.42 cm | desvio padrão = 76.53 cm
+Usando 19 pontos de configuração: erro médio = 105.45 cm | desvio padrão = 78.70 cm
+Usando 18 pontos de configuração: erro médio = 106.14 cm | desvio padrão = 78.37 cm
+Usando 17 pontos de configuração: erro médio = 109.64 cm | desvio padrão = 73.93 cm
+Usando 16 pontos de configuração: erro médio = 120.72 cm | desvio padrão = 75.86 cm
+Usando 15 pontos de configuração: erro médio = 109.04 cm | desvio padrão = 71.68 cm
+Usando 14 pontos de configuração: erro médio = 122.07 cm | desvio padrão = 73.75 cm
+Usando 13 pontos de configuração: erro médio = 103.36 cm | desvio padrão = 68.94 cm
+Usando 12 pontos de configuração: erro médio = 98.49 cm | desvio padrão = 66.77 cm
+Usando 11 pontos de configuração: erro médio = 100.55 cm | desvio padrão = 67.30 cm
+Usando 10 pontos de configuração: erro médio = 100.28 cm | desvio padrão = 66.18 cm
+Usando  9 pontos de configuração: erro médio = 96.41 cm | desvio padrão = 65.02 cm
+Usando  8 pontos de configuração: erro médio = 101.55 cm | desvio padrão = 63.02 cm
+Usando  7 pontos de configuração: erro médio = 97.96 cm | desvio padrão = 55.14 cm
+Usando  6 pontos de configuração: erro médio = 126.65 cm | desvio padrão = 64.09 cm
+Usando  5 pontos de configuração: erro médio = 114.64 cm | desvio padrão = 61.33 cm
+Usando  4 pontos de configuração: erro médio = 3818.32 cm | desvio padrão = 4953.04 cm
